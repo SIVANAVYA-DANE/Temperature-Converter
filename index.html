@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="card-container shadow-lg">
+            <h1 class="heading">Temperature Converter</h1>
+            <p class="result-text">Result</p>
+            <div class="result">
+                <h2 id="result"></h2>
+            </div>
+            <div class="align-containers">
+                <input type="text" id="Temperature" class="input-container" placeholder="Enter Temperature" />
+                <div class="type-container input-container">
+                    <select class="select-container" id="type">
+                        <option value="Fahrenheit" selected>Fahrenheit</option>
+                        <option Value="Celsius">Celsius</option>
+                    </select>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                
+            </div>
+            <div class="align-containers">
+                <div class="button" onclick="covertTemperature()">Convert</div>
+                <div class="button" onclick="resetInput()">Reset</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
